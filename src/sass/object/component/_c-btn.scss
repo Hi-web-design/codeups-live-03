@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.c-btn {
+  display: inline-block;
+  text-align: center;
+  width: rem(200);
+  padding: rem(23) 0;
+  color: $white;
+  font-family: $en-font-family;
+  font-size: rem(13);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+  background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+}
