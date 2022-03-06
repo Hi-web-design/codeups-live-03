@@ -12,6 +12,20 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
+// ----------------------------------------
+// mixin
+// ----------------------------------------
+@mixin txt($font-size, $font-weight, $color, $text-align) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  text-align: $text-align;
+}
+@mixin txt-option($line-height, $letter-spacing) {
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
 
 ////////////////////
 // フォント設定

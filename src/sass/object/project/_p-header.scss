@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-header {
+  height: rem(62);
+  background-color: $purple;
+  z-index: 9999;
+}
+
+.p-header__inner {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 rem(15);
+  @include mq(md) {
+    padding: 0 rem(10);
+  }
+}
+
+.p-header__logo {
+  color: $white;
+}
+
+.p-header__drawer {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-header__pc-nav {
+  height: inherit;
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
