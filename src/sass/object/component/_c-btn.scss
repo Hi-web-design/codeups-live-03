@@ -2,16 +2,12 @@
 
 .c-btn {
   display: inline-block;
-  text-align: center;
   width: rem(200);
-  padding: rem(23) 0;
-  color: $white;
-  font-family: $en-font-family;
-  font-size: rem(13);
-  font-weight: $bold;
-  letter-spacing: 0.05em;
-  line-height: 1;
-  text-transform: uppercase;
-  background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
+  padding: rem(20) 0;
   border-radius: 50px;
+  font-family: $en-font-family;
+  text-transform: uppercase;
+  @include txt(rem(14), $bold, $white, center);
+  @include txt-option(1, 0.05em);
+  background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
 }

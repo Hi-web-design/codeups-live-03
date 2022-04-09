@@ -2,8 +2,11 @@
 
 .p-header {
   height: rem(62);
-  background-color: $purple;
+  background-color: transparent;
+  // background-color: $purple;
   z-index: 9999;
+  position: fixed;
+  width: 100%;
 }
 
 .p-header__inner {
@@ -18,7 +21,9 @@
 }
 
 .p-header__logo {
-  color: $white;
+  font-family: $en-font-family;
+  @include txt(rem(18), $bold, $white, none);
+  @include txt-option(1.22, 0.018em);
 }
 
 .p-header__drawer {

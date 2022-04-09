@@ -189,24 +189,44 @@ select::-ms-expand {
   }
 }
 
+.l-news {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .l-news {
+    margin-top: 4.375rem;
+  }
+}
+
+.l-service {
+  margin-top: 80px;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .l-service {
+    margin-top: 8.75rem;
+  }
+}
+
 .c-btn {
   display: inline-block;
-  text-align: center;
   width: 200px;
   width: 12.5rem;
-  padding: 23px 0;
-  padding: 1.4375rem 0;
-  color: #fff;
+  padding: 20px 0;
+  padding: 1.25rem 0;
+  border-radius: 50px;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  line-height: 1;
   text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.05em;
   background: transparent -webkit-gradient(linear, left top, right top, from(#7633a4), to(#250d65)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
-  border-radius: 50px;
 }
 
 .c-hamburger {
@@ -257,6 +277,23 @@ select::-ms-expand {
           transform: rotate(-35deg);
 }
 
+.c-mv-btn {
+  display: inline-block;
+  padding: 19px 68.5px;
+  padding: 1.1875rem 4.28125rem;
+  border: 1px solid;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: none;
+  text-align: none;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
 .c-section-header {
   color: #391E88;
   text-align: center;
@@ -288,6 +325,56 @@ select::-ms-expand {
   .c-section-header__entitle {
     font-size: 2.25rem;
   }
+}
+
+.p-card__img {
+  position: relative;
+}
+
+.p-card__img::before {
+  content: "";
+  display: block;
+  padding-top: 62.6865%;
+}
+
+.p-card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-card__body {
+  margin-top: 14px;
+  margin-top: 0.875rem;
+}
+
+.p-card__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: none;
+  text-align: center;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+}
+
+.p-card__text {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: none;
+  text-align: none;
+  line-height: 1.785;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .p-footer-nav__items {
@@ -342,8 +429,10 @@ select::-ms-expand {
 .p-header {
   height: 62px;
   height: 3.875rem;
-  background-color: #391E88;
+  background-color: transparent;
   z-index: 9999;
+  position: fixed;
+  width: 100%;
 }
 
 .p-header__inner {
@@ -367,7 +456,14 @@ select::-ms-expand {
 }
 
 .p-header__logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
   color: #fff;
+  text-align: none;
+  line-height: 1.22;
+  letter-spacing: 0.018em;
 }
 
 @media screen and (min-width: 768px) {
@@ -384,6 +480,164 @@ select::-ms-expand {
   .p-header__pc-nav {
     display: block;
   }
+}
+
+.p-mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/mv_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-mv__header {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50px;
+  left: 3.125rem;
+  color: #fff;
+}
+
+.p-mv__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: none;
+  text-align: none;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+}
+
+.p-mv__subtitle {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: none;
+  text-align: none;
+  line-height: 1.8125;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+.p-mv__btn {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+.p-mv__scroll {
+  font-family: "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: none;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  position: absolute;
+  right: 5px;
+  bottom: 84px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.p-mv__scroll span {
+  position: relative;
+}
+
+.p-mv__scroll span::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background-color: #fff;
+  right: -35px;
+  bottom: -16px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.p-news__items {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.p-news__item + .p-news__item {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.p-news-content__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.p-news-content__date {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: #333;
+  text-align: none;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.p-news-content__category {
+  padding: 4px 18px;
+  padding: 0.25rem 1.125rem;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #333;
+  text-align: none;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  background-color: #e8e8e8;
+  border-radius: 50px;
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+}
+
+.p-news-content__link {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-news-content__text {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #333;
+  text-align: none;
+  line-height: 1.9285;
+  letter-spacing: 0.05em;
+}
+
+.p-service__items {
+  margin-top: 29px;
+  margin-top: 1.8125rem;
+}
+
+.p-service__item + .p-service__item {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.p-service__btn {
+  text-align: center;
+  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .pc-nav__items {

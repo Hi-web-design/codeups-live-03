@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.c-mv-btn {
+  display: inline-block;
+  padding: rem(19) rem(68.5);
+  border: 1px solid;
+  border-radius: 50px;
+  font-family: $en-font-family;
+  text-transform: uppercase;
+  @include txt(rem(15), $bold, none, none);
+  @include txt-option(1, 0.05em);
+}

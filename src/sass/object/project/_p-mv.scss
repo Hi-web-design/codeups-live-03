@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.p-mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/mv_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-mv__inner {
+
+}
+
+.p-mv__header {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(50);
+  color: $white;
+}
+
+.p-mv__title {
+  font-family: $en-font-family;
+  text-transform: uppercase;
+  @include txt(rem(40), $bold, none, none);
+  @include txt-option(1.1, 0.05em);
+}
+
+.p-mv__subtitle {
+  font-family: $base-font-family;
+  @include txt(rem(16), $normal, none, none);
+  @include txt-option(1.8125, 0.1em);
+  margin-top: rem(20);
+}
+
+.p-mv__btn {
+  margin-top: rem(30);
+}
+
+.p-mv__scroll {
+  font-family: $base-font-family;
+  text-transform: uppercase;
+  @include txt(rem(12), $bold, $white, none);
+  @include txt-option(1, 0.2em);
+  position: absolute;
+  right: 5px;
+  bottom: 84px;
+  transform: rotate(90deg);
+}
+
+.p-mv__scroll span {
+  position: relative;
+}
+
+.p-mv__scroll span::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background-color: $white;
+  right: -35px;
+  bottom: -16px;
+  transform: rotate(90deg);
+}
