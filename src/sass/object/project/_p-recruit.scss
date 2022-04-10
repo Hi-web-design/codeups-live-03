@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.p-recruit {
+  padding-top: rem(60);
+  padding-bottom: rem(56);
+  background-color: $bg-ligthgray;
+}
+
+.p-recruit__contents {
+  margin-top: rem(30);
+}
+
+.p-recruit__text {
+  @include txt(rem(14), $regular, $black, center);
+  @include txt-option(1.785, 0.05em);
+}
+
+.p-recruit__btn {
+  margin-top: rem(30);
+  text-align: center;
+}
