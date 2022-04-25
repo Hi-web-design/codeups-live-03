@@ -22,10 +22,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
+  
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -178,6 +183,42 @@
       </div>
       <div class="p-service__btn">
         <a href="#" class="c-btn">more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-works p-works">
+    <div class="p-works__inner l-inner">
+      <div class="p-works__contents">
+        <div class="p-works__images">
+          <!-- _c-swiper.scss -->
+          <div class="swiper js-works-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-works__img">
+                <img src="./images/common/works_1.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./images/common/works_1.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./images/common/works_1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-works-pagination"></div>
+        </div>
+        <div class="p-works__content">
+          <div class="p-works__title c-section-header">
+            <p class="c-section-header__entitle">works</p>
+            <h2 class="c-section-header__jatitle">制作実績</h2>
+          </div>
+          <p class="p-works__text">
+            様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！
+          </p>
+          <div class="p-works__btn">
+            <a href="#" class="c-btn">more</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
