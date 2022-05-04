@@ -1,11 +1,17 @@
 @use "global" as *;
 
 .p-news-content {
-  
+  @include mq(md) {
+    display: flex;
+  }
 }
 
 .p-news__items {
   margin-top: rem(32);
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(50);
+  }
 }
 
 .p-news__item + .p-news__item {
@@ -30,13 +36,24 @@
   background-color: $bg-gray;
   border-radius: 50px;
   margin-left: rem(15);
+  min-width: rem(82);
+    text-align: center;
+    @include mq(md) {
+    
+  }
 }
 
 .p-news-content__link {
   margin-top: rem(10);
+  @include mq(md) {
+    margin-top: 0;
+  }
 }
 
 .p-news-content__text {
   @include txt(rem(14), $regular, $black, none);
   @include txt-option(1.9285, 0.05em);
+  @include mq(md) {
+    margin-left: rem(20);
+  }
 }

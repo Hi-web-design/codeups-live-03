@@ -1,2 +1,14 @@
 @use "global" as *;
 
+.p-news__inner {
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.p-news__inner.l-inner {
+  @include mq(md) {
+    max-width: rem(917);
+    width: 100%;
+  }
+}

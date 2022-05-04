@@ -1,5 +1,31 @@
 @use "global" as *;
 
+.p-card {
+  @include mq(md) {
+    max-width: calc(33.3333% - rem(30) * 2 / 3);
+    width: 100%;
+  }
+}
+.p-card + .p-card {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(30);
+  }
+}
+
+.p-card:nth-child(3n + 1) {
+  @include mq(md) {
+    margin-left: 0;
+  }
+}
+
+.p-card:nth-child(n + 4) {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
 .p-card__img {
   position: relative;
 }
