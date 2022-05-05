@@ -914,6 +914,14 @@ select::-ms-expand {
   padding-bottom: 56px;
   padding-bottom: 3.5rem;
 }
+@media screen and (min-width: 768px) {
+  .p-works__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .p-works__images {
   position: relative;
 }
@@ -926,11 +934,6 @@ select::-ms-expand {
   content: "";
   display: block;
   padding-top: 68.955%;
-}
-@media screen and (min-width: 768px) {
-  .p-works__img::before {
-    padding-top: 68%;
-  }
 }
 
 .p-works__img img {

@@ -4,7 +4,7 @@
   padding-top: rem(60);
   padding-bottom: rem(56);
   @include mq(md) {
-    
+    display: flex;
   }
 }
 
@@ -20,9 +20,6 @@
   content: "";
   display: block;
   padding-top: 68.955%; // 231/335
-  @include mq(md) {
-    padding-top: 68%;
-  }
 }
 
 .p-works__img img {
