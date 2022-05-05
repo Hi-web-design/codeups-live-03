@@ -6,9 +6,11 @@
   }
 }
 
-.p-news__inner.l-inner {
+.p-news__inner {
   @include mq(md) {
     max-width: rem(917);
     width: 100%;
+    margin: 0 auto;
+    box-sizing: content-box;
   }
 }
